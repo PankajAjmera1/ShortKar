@@ -20,7 +20,7 @@ function Header() {
     <>
       <nav className='py-4 flex justify-between items-center'>
         <Link to='/'>
-          <h1 className='text-2xl'>ShortKar</h1>
+          <h1 className='text-2xl'>ShortKar URL</h1>
         </Link>
         <div>
           {!user ? (
