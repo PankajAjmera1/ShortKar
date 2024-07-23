@@ -7,6 +7,7 @@ import Link from "./pages/Link"
 import Redirect from "./pages/Redirect"
 import UrlProvider  from "../src/context"
 import RequireAuth from "./components/require-auth"
+import { Analytics } from '@vercel/analytics/react';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,7 @@ function App() {
     <>
         <UrlProvider>
       <RouterProvider router={router} />
+      <Analytics/>
     </UrlProvider>
     </>
   )
