@@ -22,8 +22,10 @@ const Redirect = () => {
   useEffect(() => {
     if (!loading && data) {
       fnStats();
+       // Redirect the user to the original long URL
+       window.location.href = data.original_url;
     }
-  }, [loading]);
+  }, [loading, data]);
 
   if (loading || loadingStats) {
     return (
